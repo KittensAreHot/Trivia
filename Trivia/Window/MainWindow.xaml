@@ -1,0 +1,23 @@
+﻿<Window x:Class="Trivia.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Trivia"
+        xmlns:ikriv="clr-namespace:IKriv.Wpf"
+        mc:Ignorable="d"
+        Title="Trivia"
+        Unloaded="Window_Unloaded"
+        WindowState="Maximized" MinWidth="1280" MinHeight="720" Height="720" Width="1280"
+        >
+
+    <Grid x:Name="WindowContent" >
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="#008474" Offset="0"/>
+                <GradientStop Color="#900093" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Frame x:Name="CurrentScreen" NavigationUIVisibility="Hidden" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
+    </Grid>
+</Window>

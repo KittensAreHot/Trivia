@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="Trivia.Controls.GameRoom"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Trivia.Controls"
+             xmlns:exten="clr-namespace:moreProperties"
+             mc:Ignorable="d" >
+    <Grid Name="ContentWrapper" Background="#00000000" Height="48" Width="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Top" MouseEnter="GameRoomHover" MouseLeave="GameRoomUnhover" exten:GameRoomSelected.IsSelected="False">
+        <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="12.3*"/> <!--0-->
+                <ColumnDefinition Width="1.3*"/> <!--1-->
+            </Grid.ColumnDefinitions>
+        <Label Content="Empty Name" Grid.Column="0" Name="GameName" Foreground="#A3FFFFFF" Margin="5,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Stretch" VerticalContentAlignment="Center" FontFamily="/Trivia;component/fonts/#Roboto" FontSize="24"/>
+        <Label Content="0/0" Grid.Column="1" Name="GamePlayers" Foreground="#A3FFFFFF" Margin="5,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="/Trivia;component/fonts/#Roboto" FontSize="24"/>
+        <Rectangle Grid.ColumnSpan="2" Width="Auto" HorizontalAlignment="Stretch" Height="1" VerticalAlignment="Bottom" Fill="#AAAAAA"/>
+    </Grid>
+</UserControl>

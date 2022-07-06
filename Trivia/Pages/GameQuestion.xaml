@@ -1,0 +1,52 @@
+﻿<Page x:Class="Trivia.Pages.GameQuestion"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Trivia.Pages"
+      mc:Ignorable="d" 
+      Title="GameQuestion">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="5*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="6*"/>
+        </Grid.ColumnDefinitions>
+        <Image Grid.Row="0" Grid.ColumnSpan="2" Source="Trivia logo.png" Width="Auto" Height="Auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Label Name="PointsLabel" Content="Points: 0" FontSize="30px" Margin="30,20,30,20" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Top" Style="{DynamicResource SmallBlackPanelLabel}" Width="225" Height="56"/>
+        <Canvas Name="TimerCanvas">
+            
+        </Canvas>
+        <Grid Grid.Row="1" Grid.ColumnSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3.5*"/>
+                <ColumnDefinition Width="0.5*"/>
+                <ColumnDefinition Width="2.2*"/>
+                <ColumnDefinition Width="0.5*"/>
+                <ColumnDefinition Width="3.5*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1.5*"/>
+                <RowDefinition Height="1.5*"/>
+                <RowDefinition Height="1.3*"/>
+                <RowDefinition Height="0.4*"/>
+                <RowDefinition Height="1.3*"/>
+                <RowDefinition Height="0.4*"/>
+                <RowDefinition Height="1.3*"/>
+                <RowDefinition Height="0.4*"/>
+                <RowDefinition Height="1.3*"/>
+                <RowDefinition Height="3*"/>
+            </Grid.RowDefinitions>
+            <Label Name="QuestionFrame" Content="*Empty Question*" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3" Style="{DynamicResource blackBannerLabel}" FontFamily="/Trivia;component/fonts/#Roboto" FontSize="30" FontWeight="ExtraLight"/>
+            <Label Name="Answer1" Content="*Empty Answer*" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="3" Grid.Column="2" Style="{DynamicResource AnswerLabel}" FontFamily="/Trivia;component/fonts/#Roboto" FontSize="30" FontWeight="Light" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Label Name="Answer2" Content="*Empty Answer*" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="5" Grid.Column="2" Style="{DynamicResource AnswerLabel}" FontFamily="/Trivia;component/fonts/#Roboto" FontSize="30" FontWeight="Light" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Label Name="Answer3" Content="*Empty Answer*" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="7" Grid.Column="2" Style="{DynamicResource AnswerLabel}" FontFamily="/Trivia;component/fonts/#Roboto" FontSize="30" FontWeight="Light" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Label Name="Answer4" Content="*Empty Answer*" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="9" Grid.Column="2" Style="{DynamicResource AnswerLabel}" FontFamily="/Trivia;component/fonts/#Roboto" FontSize="30" FontWeight="Light" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        </Grid>
+    </Grid>
+    
+</Page>
